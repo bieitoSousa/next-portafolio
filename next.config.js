@@ -8,8 +8,8 @@ const nextConfig = {
    loader : "akamai",
    path: "",
   },
-  basePath:`${process.env.NEXT_PUBLIC_PATH}`,
-  assetPrefix:`${process.env.NEXT_PUBLIC_PATH}`,
+  basePath:process.env.NODE_ENV === 'production' ? `${process.env.NEXT_PUBLIC_PATH}` : '',
+  assetPrefix:process.env.NODE_ENV === 'production' ?`${process.env.NEXT_PUBLIC_PATH}` : '',
 }
 
 module.exports = nextConfig
