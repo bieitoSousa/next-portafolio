@@ -34,3 +34,22 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+**/node_modules
+**/.next
+**/.env
+*.log
+mongodb-data
+coverage
+*.cpuprofile
+packages/web-pwa/src/pages
+packages/**/locales
+packages/**/public/static/locales
+packages/**/.env.local
+.vscode/settings.json
+
+# custom
+**/vsc_rest_client
+vsc_rest_client
+**/*.custom.sh
+*.custom.sh
